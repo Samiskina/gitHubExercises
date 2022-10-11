@@ -201,3 +201,25 @@ PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
 ## Bundle 2
 
 ### Exercise 1
+
+```bash
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/bundle-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        service.html
+
+remote:   https://github.com/Samiskina/GymGitExerciseSolutions.git
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Samiskina/GymGitExerciseSolutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/Samiskina/gitHubExercises.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
+```
