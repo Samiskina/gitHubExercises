@@ -261,5 +261,43 @@ remote:
 To https://github.com/Samiskina/gitHubExercises.git
  * [new branch]      ft/service-redesign -> ft/service-redesign
 branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
-
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add service.html
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "feat: added some changes to service page"
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push
+[main 1b68a80] feat: added some changes to service page
+ 1 file changed, 2 insertions(+)
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 374 bytes | 374.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/Samiskina/GymGitExerciseSolutions.git
+To https://github.com/Samiskina/gitHubExercises.git
+   4a916ed..1b68a80  main -> main
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is ahead of 'origin/ft/service-redesign' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git diff origin/main ft/service-redesign
+diff --git a/service.html b/service.html
+index 27c7b23..48ed8b3 100644
+--- a/service.html
++++ b/service.html
+@@ -8,7 +8,7 @@
+   </head>
+   <body>
+     <h1>Services we offer</h1>
+-    <h2>Working on Bundle 2</h2>
+-    <p>doing the exercise 2</p>
++    <h2>Bundle 2</h2>
++    <p>Exercise 2</p>
+   </body>
+ </html>
 ```
