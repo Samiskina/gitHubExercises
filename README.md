@@ -300,4 +300,8 @@ index 27c7b23..48ed8b3 100644
 +    <p>Exercise 2</p>
    </body>
  </html>
+ PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git merge main
+Auto-merging service.html
+CONFLICT (content): Merge conflict in service.html
+Automatic merge failed; fix conflicts and then commit the result.
 ```
