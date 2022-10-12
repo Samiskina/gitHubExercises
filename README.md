@@ -9,8 +9,6 @@ PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git init
 Initialized empty Git repository in C:/Users/Samantha/Dropbox/PC/Desktop/The gym/gitHubExercise/.git/
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch 
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 On branch master
 
 No commits yet
@@ -18,16 +16,12 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch -m master main
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 On branch main
 
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status    
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 On branch main
 
 No commits yet
@@ -38,11 +32,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add README.md
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "first commit"
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 [main (root-commit) 8211042] first commit
  1 file changed, 1 insertion(+)
  create mode 100644 README.md
@@ -65,15 +55,11 @@ PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch
   main
 * test
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout dev
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 Switched to branch 'dev'
 M       README.md
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch -d test
 Deleted branch test (was 8211042).
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 On branch dev
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -90,32 +76,18 @@ PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch
 
 ```bash
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add home.html
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git stash
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add about.html
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git stash
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 Saved working directory and index state WIP on dev: 9c8c5cd changes
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add team.html
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git stash
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 Saved working directory and index state WIP on dev: 9c8c5cd changes
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git stash list
 stash@{0}: WIP on dev: 9c8c5cd changes
 stash@{1}: WIP on dev: 9c8c5cd changes
 stash@{2}: WIP on dev: 9c8c5cd changes
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git stash pop 'stash@{1}'
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 Rename from 'C:/Users/Samantha/Dropbox/PC/Desktop/The gym/gitHubExercise/.git/index.lock' to 'C:/Users/Samantha/Dropbox/PC/Desktop/The gym/gitHubExercise/.git/index' failed. Should I try again? (y/n) y
 On branch dev
 Your branch is up to date with 'origin/dev'.
@@ -126,8 +98,6 @@ Changes to be committed:
 
 Dropped stash@{1} (cbd4bfd5436578ca5c1e9544f774f30f5981762b)
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git stash pop 'stash@{1}'
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 On branch dev
 Your branch is up to date with 'origin/dev'.
 
@@ -138,11 +108,7 @@ Changes to be committed:
 
 Dropped stash@{1} (4a37c72a998c38d6eba738a4830bc05307e10e07)
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add .
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 On branch dev
 Your branch is up to date with 'origin/dev'.
 
@@ -152,8 +118,6 @@ Changes to be committed:
         new file:   home.html
 
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m 'stash'
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 [dev 6c3d2fa] stash
  2 files changed, 25 insertions(+)
  create mode 100644 about.html
@@ -169,8 +133,6 @@ remote: Resolving deltas: 100% (1/1), done.
 To https://github.com/Samiskina/gitHubExercises.git
    9c8c5cd..6c3d2fa  dev -> dev
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git stash pop 'stash@{0}'
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 On branch dev
 Your branch is up to date with 'origin/dev'.
 
@@ -185,12 +147,8 @@ Changes not staged for commit:
 
 Dropped stash@{0} (a19810e64b0a5e208a33352507da7c1a07ee6ec8)
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git reset --hard
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 HEAD is now at 6c3d2fa stash
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 On branch dev
 Your branch is up to date with 'origin/dev'.
 
@@ -206,8 +164,6 @@ PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout -b ft/bundle-2
 Switched to a new branch 'ft/bundle-2'
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
 On branch ft/bundle-2
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
