@@ -296,12 +296,6 @@ PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git cherry-pick 
 Auto-merging README.md
 CONFLICT (content): Merge conflict in README.md
 error: could not apply 9f71309... Docs: added commands history to README file
-hint: After resolving the conflicts, mark them with
-hint: "git add/rm <pathspec>", then run
-hint: "git cherry-pick --continue".
-hint: You can instead skip this commit with "git cherry-pick --skip".
-hint: To abort and get back to the state before "git cherry-pick",
-hint: run "git cherry-pick --abort".
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add README.md
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "Feat: ft/team-page last commit applied to ft/contact-page" 
 [ft/contact-page f310c4d] Feat: ft/team-page last commit applied to ft/contact-page
@@ -323,4 +317,39 @@ remote:      https://github.com/Samiskina/GymGitExerciseSolutions/pull/new/ft/co
 remote:
 To https://github.com/Samiskina/gitHubExercises.git
  * [new branch]      ft/contact-page -> ft/contact-page
+ PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add .   
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "Feat: added an faq page"
+[ft/faq-page b7413b6] Feat: added an faq page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 faq.html
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push --set-upstream origin ft/faq-page
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 457 bytes | 457.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/Samiskina/GymGitExerciseSolutions.git
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Samiskina/GymGitExerciseSolutions/pull/new/ft/faq-page
+remote:
+To https://github.com/Samiskina/gitHubExercises.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
 ```
