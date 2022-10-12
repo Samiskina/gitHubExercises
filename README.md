@@ -179,3 +179,86 @@ To https://github.com/Samiskina/gitHubExercises.git
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
 ```
+
+### exercise 2
+
+```bash
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout main   
+error: Your local changes to the following files would be overwritten by checkout:
+        about.html
+        home.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add .
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
+On branch ft/bundle-2
+Your branch is up to date with 'origin/ft/bundle-2'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   about.html
+        modified:   home.html
+        new file:   team.html
+
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "feat: added team page"
+[ft/bundle-2 d3aaa9a] feat: added team page
+ 3 files changed, 25 insertions(+), 10 deletions(-)
+ create mode 100644 team.html
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 7 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git pull origin main
+From https://github.com/Samiskina/gitHubExercises
+ * branch            main       -> FETCH_HEAD
+Updating 8211042..4a916ed
+Fast-forward
+ README.md    | 182 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ about.html   |  12 ++++
+ home.html    |  13 +++++
+ service.html |  12 ++++
+ 4 files changed, 218 insertions(+), 1 deletion(-)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 service.html
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   service.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add service.html
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "feat: added h2 and p tag to service page"
+[ft/service-redesign 0088b56] feat: added h2 and p tag to service page
+ 1 file changed, 2 insertions(+)
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 177.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/Samiskina/GymGitExerciseSolutions.git
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/Samiskina/GymGitExerciseSolutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/Samiskina/gitHubExercises.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+```
