@@ -179,3 +179,30 @@ To https://github.com/Samiskina/gitHubExercises.git
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
 ```
+## Bundle 4
+
+### Exercise 1
+
+```bash
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git remote add git-copy https://github.com/Samiskina/git-Exercise-part-2.git
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git remote -v
+git-copy        https://github.com/Samiskina/git-Exercise-part-2.git (fetch)
+git-copy        https://github.com/Samiskina/git-Exercise-part-2.git (push)
+origin  https://github.com/Samiskina/gitHubExercises.git (fetch)
+origin  https://github.com/Samiskina/gitHubExercises.git (push)
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add .
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "Feat: new content in the home page" 
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push git-copy main
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (32/32), 5.91 KiB | 2.96 MiB/s, done.
+Total 32 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/Samiskina/git-Exercise-part-2.git
+ * [new branch]      main -> main
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
+```
