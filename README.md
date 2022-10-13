@@ -180,7 +180,9 @@ branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 ```
 
 ## Bundle 3
+
 ### Exercise 1
+
 ```bash
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout -b ft/team-page
 Switched to a new branch 'ft/team-page'
@@ -324,3 +326,6 @@ Auto-merging README.md
 On branch ft/faq-page
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>   
 ```
+
+### exercise 2
+
