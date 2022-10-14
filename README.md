@@ -7,7 +7,7 @@
 ```bash
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git init
 Initialized empty Git repository in C:/Users/Samantha/Dropbox/PC/Desktop/The gym/gitHubExercise/.git/
-PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch 
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
 On branch master
 
@@ -21,7 +21,7 @@ On branch main
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
-PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status    
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
 On branch main
 
 No commits yet
@@ -72,7 +72,7 @@ PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch
   main
 ```
 
-###  Exercise 2
+### Exercise 2
 
 ```bash
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add home.html
@@ -179,11 +179,16 @@ To https://github.com/Samiskina/gitHubExercises.git
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
 ```
+
 ## Bundle 4
 
 ### Exercise 1
 
 ```bash
+
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git remote add git-copy https://github.com/Samiskina/git-Exercise-part-2.git
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git remote -v
 git-copy        https://github.com/Samiskina/git-Exercise-part-2.git (fetch)
@@ -191,9 +196,7 @@ git-copy        https://github.com/Samiskina/git-Exercise-part-2.git (push)
 origin  https://github.com/Samiskina/gitHubExercises.git (fetch)
 origin  https://github.com/Samiskina/gitHubExercises.git (push)
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add .
-hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
-hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
-PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "Feat: new content in the home page" 
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "Feat: new content in the home page"
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push git-copy main
 Enumerating objects: 32, done.
 Counting objects: 100% (32/32), done.
@@ -204,5 +207,44 @@ Total 32 (delta 11), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (11/11), done.
 To https://github.com/Samiskina/git-Exercise-part-2.git
  * [new branch]      main -> main
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
+```
+### Exercise 2
+
+```bash
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout ft/footer
+Switched to branch 'ft/footer'
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add .
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "Docs: updated README file"
+[ft/footer ba8ae0b] Docs: updated README file
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push origin ft/footer
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 411 bytes | 411.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/Samiskina/GymGitExerciseSolutions.git
+To https://github.com/Samiskina/gitHubExercises.git
+   0fe3016..ba8ae0b  ft/footer -> ft/footer
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git merge --squash ft/footer
+Updating 383d0dd..ba8ae0b
+Fast-forward
+Squash commit -- not updating HEAD
+ README.md   | 15 ++++++++++-----
+ footer.html | 13 +++++++++++++
+ 2 files changed, 23 insertions(+), 5 deletions(-)
+ create mode 100644 footer.html
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add .
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "Feat: footer changes merge squash"
+ * [new branch]      ft/squashing -> ft/squashing
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
 ```
