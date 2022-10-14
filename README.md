@@ -7,7 +7,7 @@
 ```bash
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git init
 Initialized empty Git repository in C:/Users/Samantha/Dropbox/PC/Desktop/The gym/gitHubExercise/.git/
-PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch 
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
 On branch master
 
@@ -21,7 +21,7 @@ On branch main
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
-PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status    
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
 On branch main
 
 No commits yet
@@ -72,7 +72,7 @@ PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git branch
   main
 ```
 
-###  Exercise 2
+### Exercise 2
 
 ```bash
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add home.html
@@ -179,11 +179,16 @@ To https://github.com/Samiskina/gitHubExercises.git
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
 ```
+
 ## Bundle 4
 
 ### Exercise 1
 
 ```bash
+
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git remote add git-copy https://github.com/Samiskina/git-Exercise-part-2.git
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git remote -v
 git-copy        https://github.com/Samiskina/git-Exercise-part-2.git (fetch)
@@ -193,7 +198,7 @@ origin  https://github.com/Samiskina/gitHubExercises.git (push)
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add .
 hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
 hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
-PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "Feat: new content in the home page" 
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "Feat: new content in the home page"
 PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push git-copy main
 Enumerating objects: 32, done.
 Counting objects: 100% (32/32), done.
