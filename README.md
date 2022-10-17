@@ -177,7 +177,38 @@ remote:
 To https://github.com/Samiskina/gitHubExercises.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
-PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise>
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git status
+On branch ft/team-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git add team.html
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git commit -m "Feat: added a new team page"
+[ft/team-page 8a27cc7] Feat: added a new team page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> git push --set-upstream origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 476 bytes | 238.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/Samiskina/GymGitExerciseSolutions.git
+remote: 
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/Samiskina/GymGitExerciseSolutions/pull/new/ft/team-page
+remote:
+To https://github.com/Samiskina/gitHubExercises.git
+ * [new branch]      ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+PS C:\Users\Samantha\Dropbox\PC\Desktop\The gym\gitHubExercise> 
 ```
 
 ### Exercise 2
